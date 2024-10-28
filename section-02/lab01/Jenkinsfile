@@ -46,7 +46,7 @@ pipeline {
         echo "Building and push the image..."
         withCredentials ([
           usernamePassword(
-            credentialsId: 'docker-credentials',
+            credentialsId: 'dockerHubId',
             usernameVariable: 'DOCKER_HUB_USER', 
             passwordVariable: 'DOCKER_HUB_PASSWORD'
           )
