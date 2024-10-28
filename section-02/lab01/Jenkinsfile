@@ -13,10 +13,7 @@ pipeline {
       image="nexweb1/sample"
       namespace="default"
       deployment="deployment/sample.yaml"
-      service="deployment/service.yaml"
-      DOCKER_HUB_USER ="ryuhistory"
-      DOCKER_HUB_PASSWORD="Tesororyum7!"	  
-	  
+      service="deployment/service.yaml"  
   }
 
   tools {
