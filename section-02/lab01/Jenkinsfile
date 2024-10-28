@@ -47,8 +47,8 @@ pipeline {
         withCredentials ([
           usernamePassword(
             credentialsId: 'dockerHubId',
-            usernameVariable: 'DOCKER_HUB_USER', 
-            passwordVariable: 'DOCKER_HUB_PASSWORD'
+            usernameVariable: 'ryuhistory', 
+            passwordVariable: 'Tesororyum7!'
           )
         ]) {
           echo "some credentials info : ${DOCKER_HUB_USER}, ${DOCKER_HUB_PASSWORD}"
